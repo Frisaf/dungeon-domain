@@ -8,14 +8,35 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <main>
         <header>
-            <h1><a href="../../../index">Dungeon Domain</a></h1>
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+            <h1><a href="/">Dungeon Domain</a></h1>
         </header>
+        {% include "nav.njk" %}
         <div class="container">
+            {% if tags and "session-report" in tags %}
+                <p><a href="../">Go back</a></p>
+            {% endif %}
             {{ content }}
+            {% if tags and tags[1] == "session-report" %}
+                <h3>Character(s) Interacted With</h3>
+                <ul>
+                    {% for npc in npc_interactions %}
+                        <li>{{ npc }}</li>
+                    {% endfor %}
+                </ul>
+                <h3>Participants</h3>
+                <ul>
+                    {% for participant in participants %}
+                        <li><a href="/posts/characters/{{ participant }}">{{ participant | capitalize }}</a></li>
+                        <!-- This needs a fix to work -->
+                    {% endfor %}
+                </ul>
+            {% endif %}
         </div>
     </main>
 <script src="/script/script.js"></script>

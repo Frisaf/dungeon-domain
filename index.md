@@ -29,12 +29,12 @@ title: Home
 
 ## About the Campaign
 <hr>
-<p>The campaign takes place in the world of Wildemount, a setting created by Mathew Mercer of Critical Role. This is also the world where the Mighty Nein's adventures took place. The game system used is Dungeons & Dragons 5th Edition. <a href="https://owlbear.rodeo" target="_blank">Owlbear Rodeo</a> is used for battle maps. We play Sundays 19:00 GMT +1</p>
+<p>The campaign takes place in the world of Wildemount, a setting created by Mathew Mercer of Critical Role. This is also the world where the Mighty Nein's adventures took place. The game system used is Dungeons & Dragons 5th Edition. <a href="https://owlbear.rodeo" target="_blank">Owlbear Rodeo</a> is used for battle maps. We play Sundays 19:00 GMT +1.</p>
 
 ### Players
 
 <ul>
-    {%- for post in collections.posts -%}
+    {%- for post in collections.characters -%}
         {%- if "player-character" in post.data.tags -%}
             {%- if post.data.playing === false -%}
                 <li><s>{{ post.data.player }} - <em>{{ post.data.title }}</em></s></li>
@@ -46,4 +46,4 @@ title: Home
 </ul>
 
 ### Disclaimer
-You might notice that the session reports do not reach all the way until the very start, and the answer to that is simple: I did not take notes back then and thus I do not have any material to report of. Neither did I do session reports back then. That's not something I started to do until a bit later into the campaign. There is however a quick summary of the start of the campaign on the SESSIONS PAGE.
+You might notice that the session reports do not reach all the way until the very start, and the answer to that is simple: I did not take notes back then and thus I do not have any material to report of. Neither did I do session reports back then. That's not something I started to do until a bit later into the campaign. There is however a quick summary of the start of the campaign [here](/start_summary/)
