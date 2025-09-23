@@ -21,7 +21,14 @@ header {
     height: 10rem;
     display: grid;
     align-items: center;
-    background-image: url("images/texture-990115.jpg");
+    background-image: url("../img/dice.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    text-shadow: 2px 10px 10px #000000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 header h1 a{
