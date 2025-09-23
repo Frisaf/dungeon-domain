@@ -43,6 +43,10 @@ footer {
     text-align: center;
 }
 
+img {
+    max-width: 100%;
+}
+
 .container {
     top: 0%; left: 50%;
     margin: 2em 0;
