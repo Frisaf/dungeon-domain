@@ -11,9 +11,12 @@ export default function (eleventyConfig) {
 
 	return {
 		markdownTemplateEngine: "njk",
-		dir: {
-	        input: "src",
-	        output: "docs"
-    }
 	}
 };
+
+export const config = {
+  dir: {
+		output: "docs",
+  }
+};
+
