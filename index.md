@@ -11,19 +11,17 @@ title: Home
 <div>
     <button class="accordion">Characters</button>
     <div class="panel">
-        {%- for post in collections.posts -%}
-            {%- if "player-character" in post.data.tags -%}
-                {%- if post.data.playing === false -%}
-                    <a href="{{ post.url }}"><div class="panelBox">
-                        <span><s>{{ post.data.title }}</s></span>
+        {% for character in collections.player_characters %}
+            {%- if character.data.playing === false -%}
+                    <a href="{{ character.url }}"><div class="panelBox">
+                        <span><s>{{ character.data.title }}</s></span>
                     </div></a>
                 {%- else -%}
-                    <a href="{{ post.url }}"><div class="panelBox">
-                        <span>{{ post.data.title }}</span>
+                    <a href="{{ character.url }}"><div class="panelBox">
+                        <span>{{ character.data.title }}</span>
                     </div></a>
                 {%- endif -%}
-            {%- endif -%}
-        {%- endfor -%}
+        {% endfor %}
     </div>
 </div>
 
