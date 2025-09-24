@@ -2,6 +2,8 @@
 title: Summary of the Start
 layout: layout.html
 ---
+<p><button onclick="window.history.go(-1)" class="goBack">Go back</button></p>
+
 # Summary of the start
 
 <hr>

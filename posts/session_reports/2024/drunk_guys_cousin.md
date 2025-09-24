@@ -3,7 +3,7 @@ title: The Drunk Guy's Cousin
 tags: ["session-report"]
 when: 8th September 2024
 npc_interactions: ["Arl Bortock", "Drunk Guy"]
-participants: ["fenris", "freaky carl", "melkor von dos", "nim Frysgard", "quill"]
+participants: ["Fenris", "Freaky Carl", "Melkor von Dos", "Nim Frysgard", "Quill"]
 ---
 
 # The Drunk Guy's Cousin

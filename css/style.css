@@ -332,3 +332,18 @@ nav {
     background-color: #262626;
     padding-left: 8px;
 }
+
+.goBack {
+    background: none;
+    color: brown;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    text-decoration: underline;
+}
+
+.goBack:hover {
+    color: black;
+}

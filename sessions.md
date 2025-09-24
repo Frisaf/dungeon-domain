@@ -15,7 +15,9 @@ All session reports. A summary of the start can be found [here](/start_summary/)
 Last session report:
 
 {% for post in collections.posts %}
-    {% if "session-report" in post.data.tags %}
-        <a href="{{ post.url }}">{{ post.data.title }}</a>
-    {% endif %}
+    <ul>
+        {% if "session-collection" in post.data.tags %}
+            <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+        {% endif %}
+    </ul>
 {% endfor %}

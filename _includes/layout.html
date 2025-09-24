@@ -21,6 +21,11 @@
             {% if tags and "session-report" in tags %}
                 <p><a href="../">Go back</a></p>
             {% endif %}
+            {% if tags[1] == "player-character" %}
+                <h1>{{ title }}</h1>
+                <p><em>Played by {{ player }}</em></p>
+                <hr>
+            {% endif %}
             {{ content }}
             {% if tags and tags[1] == "session-report" %}
                 <h3>Character(s) Interacted With</h3>
@@ -32,8 +37,7 @@
                 <h3>Participants</h3>
                 <ul>
                     {% for participant in participants %}
-                        <li><a href="/posts/characters/{{ participant }}">{{ participant | capitalize }}</a></li>
-                        <!-- This needs a fix to work -->
+                        <li>{{ participant }}</li>
                     {% endfor %}
                 </ul>
             {% endif %}

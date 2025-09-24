@@ -34,7 +34,7 @@ title: Home
 ### Players
 
 <ul>
-    {%- for post in collections.characters -%}
+    {%- for post in collections.posts -%}
         {%- if "player-character" in post.data.tags -%}
             {%- if post.data.playing === false -%}
                 <li><s>{{ post.data.player }} - <em>{{ post.data.title }}</em></s></li>
