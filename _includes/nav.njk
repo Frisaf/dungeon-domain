@@ -5,14 +5,12 @@
         <li class="dropdown"><a href=""><i class="fa fa-users" aria-hidden="true"></i>
             Characters</a>
             <div class="dropdownContent">
-                {% for post in collections.posts %}
-                    {% if post.data.tags[1] == "player-character" or post.data.title == "Freaky Carl" %}
-                        <a href="{{ post.url }}">{{ post.data.title }}</a>
-                    {% endif %}
+                {% for character in collections.player_characters %}
+                    <a href="{{ character.url }}">{{ character.data.title }}</a>
                 {% endfor %}
             </div>
         </li>
-        <li><a href="/sessions/"><i class="fa fa-book" aria-hidden="true"></i>
+        <li><a href="/session_collections/all_sessions/"><i class="fa fa-book" aria-hidden="true"></i>
             Sessions</a></li>
         <li><a href="https://github.com/Frisaf/dnd-sessions" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>
             Github</a></li>
