@@ -33,11 +33,13 @@ title: Home
 
 <ul>
     {%- for post in collections.player_characters -%}
-        {%- if post.data.playing === false -%}
-                <li><s>{{ post.data.player }} - <em>{{ post.data.title }}</em></s></li>
+        {% if post.data.tags[1] != "nonplayer-character" %}
+            {%- if post.data.playing === false -%}
+                    <li><s>{{ post.data.player }} - <em>{{ post.data.title }}</em></s></li>
             {%- else -%}
-                <li>{{ post.data.player }} - <em>{{ post.data.title }}</em></li>
-            {%- endif -%}
+                    <li>{{ post.data.player }} - <em>{{ post.data.title }}</em></li>
+                {%- endif -%}
+        {% endif %}
     {%- endfor -%}
 </ul>
 
