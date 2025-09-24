@@ -1,17 +1,9 @@
 ---
 title: The Drunk Guy's Cousin
-tags: session-report
 date: 2024-09-08
 npc_interactions: ["Arl Bortock", "Drunk Guy"]
-participants: ["Fenris", "Freaky Carl", "Melkor von Dos", "Nim Frysgard", "Quill"]
+participants: ["Fenris", "Freaky Carl", "Melkor von Dos", "Nim Frysgard", "Quill", "Kalilia Crowdance"]
 ---
-
-# The Drunk Guy's Cousin
-
-<time><em>{{ date | formatDate }}</em></time>
-
-<hr>
-
 Melkor has just killed a Doppelganger together with the innkeeper Arl Bortock. Do you think you can rest easy now? You're wrong...
 
 Fenris is hung over, Kalilia is visiting her wife and Melkor is speaking with the interesting new individual in the inn. Even though they seem to have very few things in common, the Tabaxi whose name is Quill agrees to join the party. Suddenly, a drunk guy storms into the inn, followed by another smaller individual. The drunk guy is searching for adventurers, or heroes, who can help him with the drama between him and his cousin. He explains that Nim had promised him that he could find adventurers in the inn, and when the party explains that they might be the ones he is searching for, he starts to explain his dilemma: His cousin stole his amulet long ago, and he has been furious about it ever since. He has been trying to contact him and try to get him to give back the amulet, but to no success. The "drunk guy's" speech is rather slurred due to the fact that he is drunk and has trouble organizing his thoughts. He explains that he wants the party to kill his cousin, and points in the direction of where he lives.

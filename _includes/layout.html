@@ -18,16 +18,32 @@
         </header>
         {% include "nav.njk" %}
         <div class="container">
-            {% if tags and "session-report" in tags %}
-                <p><a href="../">Go back</a></p>
+            {% if tags[0] == "session_reports" or tags[0] == "session_collections" %}
+                <p><button onclick="window.history.go(-1)" class="goBack">Go back</button></p>
             {% endif %}
             {% if tags[1] == "player-character" %}
                 <h1>{{ title }}</h1>
                 <p><em>Played by {{ player }}</em></p>
                 <hr>
+                {% if playing == false %}
+                    <p><em>Note: Player is no longer a part of the campaign.</em></p>
+                {% endif %}
+            {% endif %}
+            {% if tags[0] == "session_reports" %}
+                <h1>{{ title }}</h1>
+                <p><time><em>{{ date | formatDate }}</em></time></p>
+                <hr>
             {% endif %}
             {{ content }}
-            {% if tags and tags[1] == "session-report" %}
+            {% if tags and tags[0] == "session_reports" %}
+                {% if rewards %}
+                    <h3>Rewards Granted</h3>
+                    <ul>
+                        {% for reward in rewards %}
+                            <li>{{ reward }}</li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
                 <h3>Character(s) Interacted With</h3>
                 <ul>
                     {% for npc in npc_interactions %}

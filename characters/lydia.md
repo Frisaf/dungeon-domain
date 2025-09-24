@@ -1,5 +1,5 @@
 ---
-title: Lydia Naïkir
+title: Lydia Naïkiir
 tags: ["player-character"]
 playing: true
 player: Lydia
