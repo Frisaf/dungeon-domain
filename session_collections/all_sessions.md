@@ -12,7 +12,9 @@ All session reports. A summary of the start can be found [here](/start_summary/)
 
 <hr>
 
-Last session report:
+{% for session in collections.session_reports | reverse | itemLimit(1) %}
+    <p>Last session report: <a href="{{ session.url }}">{{ session.data.title }}</a></p>
+{% endfor %}
 
 <ul>
     {% for post in collections.session_collections %}

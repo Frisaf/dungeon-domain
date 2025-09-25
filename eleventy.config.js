@@ -9,6 +9,10 @@ export default function (eleventyConfig) {
 		return DateTime.fromJSDate(dateObj).toFormat(format)
 	})
 
+	eleventyConfig.addFilter("itemLimit", function(array, maximum) {
+    	return array.slice(0, maximum);
+	});
+
 	return {
 		markdownTemplateEngine: "njk",
 	}
