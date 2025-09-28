@@ -26,8 +26,8 @@
                 <h1>{{ title }}</h1>
                 <p><em>Played by {{ player }}</em></p>
                 <hr>
-                {% if playing == false %}
-                    <p><em>Note: Player is no longer a part of the campaign.</em></p>
+                {% if image %}
+                    <img src="{{ image }}">
                 {% endif %}
             {% endif %}
             {% if tags[0] == "session_reports" %}
@@ -36,6 +36,9 @@
                 <hr>
             {% endif %}
             {{ content }}
+            {% if playing == false and tags[1] == "player-character" %}
+                <p><em>Note: Player is no longer a part of the campaign.</em></p>
+            {% endif %}
             {% if tags and tags[0] == "session_reports" %}
                 {% if rewards %}
                     <h3>Rewards Granted</h3>
