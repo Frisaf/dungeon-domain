@@ -50,7 +50,7 @@ img {
 .container {
     top: 0%; left: 50%;
     margin: 2em 0;
-    padding: 4em;
+    padding: 4rem;
     box-shadow: 2px 3px 20px black, 0 0 60px #8a4d0f inset;
     background: #fffef0;
     filter: url(#wavy2);
@@ -220,6 +220,7 @@ nav {
 @media only screen and (max-width: 1000px) {
     .container {
         width: 80%;
+        padding: 2rem;
     }
 }
 
